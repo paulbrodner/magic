@@ -27,11 +27,16 @@ public class Gui extends Screen
      * 
      * @param name
      * @param title
+     * @throws Exception
      */
-    public Gui(String appIcon, String appTitle)
+    public Gui(String appIcon, String appTitle) throws Exception
     {
         super();
         URL resource = getClass().getClassLoader().getResource(getApplicationName());
+        if (resource == null)
+        {
+            throw new Exception("Create and initialize a Resource folder first: " + getApplicationName());
+        }
         logger.info("Use root folder: " + resource.getPath());
         setAppFolder(resource.getPath());
         setAppIcon(appIcon);
