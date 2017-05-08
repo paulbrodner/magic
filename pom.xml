@@ -26,7 +26,6 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<sikuli.ide-jar.path>/Applications/SikuliX-IDE.app/Contents/sikuli-ide.jar</sikuli.ide-jar.path>
 	</properties>
 
 	<developers>
@@ -55,13 +54,7 @@
 			<artifactId>sikuli-core</artifactId>
 			<version>1.2.2</version>
 		</dependency>
-		<dependency>
-			<groupId>org.sikuli</groupId>
-			<artifactId>script</artifactId>
-			<version>1.2.2</version>
-			<scope>system</scope>
-			<systemPath>${sikuli.ide-jar.path}</systemPath>
-		</dependency>
+
 		<dependency>
 			<groupId>commons-logging</groupId>
 			<artifactId>commons-logging</artifactId>
